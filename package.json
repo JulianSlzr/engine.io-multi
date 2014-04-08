@@ -1,0 +1,39 @@
+{
+  "name": "engine.io-multi",
+  "version": "0.0.1",
+  "description": "Add socket multiplexing support to engine.io and engine.io-client",
+  "keywords": [
+    "websocket",
+    "socket",
+    "engine",
+    "io",
+    "multiplex",
+    "tabs"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "debug": "0.7.4"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*",
+    "zuul": "1.5.4"
+  },
+  "contributors": [
+    {
+      "name": "Julian Salazar",
+      "email": "julian@salazar.io"
+    },
+    {
+      "name": "Tianyu Liu",
+      "email": "poohlty@sina.com"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "email": "rauchg@gmail.com"
+    }
+  ],
+  "browser": "./lib/browser.js"
+}
