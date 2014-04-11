@@ -17,6 +17,8 @@
     "debug": "0.7.4"
   },
   "devDependencies": {
+    "engine.io": "1.0.3",
+    "engine.io-client": "1.0.3",
     "mocha": "*",
     "expect.js": "*",
     "zuul": "1.5.4"
