@@ -12,6 +12,9 @@
 		var socket = m("ws://localhost:9005");
 		socket.on('open', function() {
 			console.log("started from the bottom now we here");
+			socket.on('message', function(data) {
+				console.log("got a message, it said: "+data[0]);
+			});
 		});
 
 		// test intertab instance
