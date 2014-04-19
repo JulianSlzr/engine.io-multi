@@ -10,6 +10,9 @@
 	<script type="text/javascript" charset="utf-8">
 		var m = multi(eio);
 		var socket = m("ws://localhost");
+		socket.on('open', function() {
+			console.log("started from the bottom now we here");
+		});
 
 		// test intertab instance
 		// var test = new it();
