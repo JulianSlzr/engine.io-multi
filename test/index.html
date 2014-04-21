@@ -8,7 +8,10 @@
 </head>
 <body style="">
 	<script type="text/javascript" charset="utf-8">
+
 		var m = multi(eio);
+		
+		// We are the master
 		var socket = m("ws://localhost:9005");
 		socket.on('open', function() {
 			console.log("started from the bottom now we here");
@@ -17,8 +20,13 @@
 			});
 		});
 
-		// test intertab instance
-		// var test = new it();
+		// We are the slave
+		var socket2 = m("fakeaddress");
+		// TODO: if the socket already exists, should we "open"? this is the territory of demultiplexing server-side
+		socket2.on('message', function() {
+			console.log("message event emulated");
+		});
+
 	</script>
 </body>
 </html>
